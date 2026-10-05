@@ -1,0 +1,16 @@
+{
+    "name": "event-registration",
+    "version": "1.0.0",
+    "description": "Secure Event User Registration Application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "dev": "node server.js"
+    },
+    "dependencies": {
+      "express": "^5.1.0",
+      "express-rate-limit": "^8.2.1",
+      "helmet": "^8.1.0"
+    }
+  }
+  
