@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Event Registration Form</h1>
+
+        <form id="registrationForm">
+
+            <!-- Full Name -->
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                maxlength="50"
+                autocomplete="name"
+                required
+            >
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                maxlength="100"
+                autocomplete="email"
+                required
+            >
+
+            <!-- Phone -->
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                inputmode="numeric"
+                autocomplete="tel"
+                required
+            >
+
+            <!-- Event -->
+            <label for="event">Select Event</label>
+
+            <select
+                id="event"
+                name="event"
+                required
+            >
+                <option value="">
+                    -- Select an Event --
+                </option>
+
+                <option value="DevOps Workshop">
+                    DevOps Workshop
+                </option>
+
+                <option value="AI Seminar">
+                    AI Seminar
+                </option>
+
+                <option value="Hackathon">
+                    Hackathon
+                </option>
+
+                <option value="Technical Symposium">
+                    Technical Symposium
+                </option>
+            </select>
+
+            <!-- Gender -->
+            <fieldset>
+
+                <legend>Gender</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                    >
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    >
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    >
+                    Other
+                </label>
+
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p id="message" aria-live="polite"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

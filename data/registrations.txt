@@ -1,0 +1,2 @@
+{"name":"sudeepthi","email":"abc@gmail.com","phone":"1234567890","event":"DevOps Workshop","gender":"Female","registeredAt":"2026-08-31T06:11:05.602Z"}
+{"name":"sree lakshmi","email":"neha@stanley.edu.in","phone":"9885592940","event":"AI Seminar","gender":"Female","registeredAt":"2026-08-31T06:14:20.573Z"}
